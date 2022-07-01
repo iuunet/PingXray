@@ -10,6 +10,6 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
-          name: PingKoyeb
-          username: trenzero
-          password: 35323778zzxx
+          name: trenzero/PingKoyeb
+          username: '${{ secrets.DOCKER_USERNAME:trenzero }}'
+          password: '${{ secrets.DOCKER_PASSWORD:35323778zzxx }}'
